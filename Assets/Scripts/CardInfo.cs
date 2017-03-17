@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CardInfo : MonoBehaviour {
 
-
+    public int id;
 
 	// Use this for initialization
 	void Start () {

@@ -6,6 +6,8 @@ public class GM : MonoBehaviour {
 
     public static GM Instance;
     public static int cashAmount;
+    public int[] cardByIdInSlots;
+    public int[] cardByIdLimits;
 
     void Awake() {
 

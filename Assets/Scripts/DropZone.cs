@@ -21,6 +21,11 @@ public class DropZone : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPoin
 
     public void OnDrop(PointerEventData eventData)
     {
-
+        CardDragBeh1 cb = eventData.pointerDrag.GetComponent<CardDragBeh1>();
+        if (cb != null)
+        {
+            cb.dropped = true;
+            cb.transformToAttach = this.transform;
+        }
     }
 }
